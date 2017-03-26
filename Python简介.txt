@@ -1,0 +1,128 @@
+🎈Python 简介:🎈
+ 	Python的灵魂在于各种优秀的库/框架/模块.
+    经典爬虫框架: Scrapy
+
+
+🎈Python 版本:🎈
+    2.x  和3.x  不兼容的!!!!!
+    你网上看的教程.必须先指定对方用的是哪个版本.
+    Mac 升级Python 3.x:  brew install python3
+
+    版本切换.
+    📌📌要用python3 执行命令时候 python3 xxx.py 📌📌
+    📌📌要用python2 执行命令时候 python2 xxx.py 📌📌
+
+    用type+命令 来查看命令的启动路径.
+    ✘✘∙𝒗 zz type python
+    python is /usr/local/bin/python
+    ✘✘∙𝒗 zz type python3
+    python3 is /usr/local/bin/python3
+
+   📌Mac 系统自带的python环境 默认启动路径是 /usr/bin         📌
+   📌Mac 用户安装的python环境 默认启动路径是 /usr/local/bin   📌
+   📌终端里 用python xxx.py 默认使用/usr/local/bin 下的python 📌
+
+
+
+
+
+🎈Python IDE: VS code 🎈
+    只有两个. Pycharm 和 VScode
+    Pycharm: 专业的 Python 编辑器. 内存占用大,上手难!初学者不建议用.
+    推荐 VScode... 
+
+    📌📌VS code Python 环境:📌📌
+        VS code 原生是不支持Python的装个 python 插件就能用了.
+        这个插件自带 调试功能
+        具体配置看这篇文章
+        http://www.jianshu.com/p/c76d616a23ff
+
+
+
+🎈Python 基本用法:🎈
+
+    注释: 
+        单行注释: 井号 #  右边的任何内容都会被忽略.
+        多行注释: 三个单引号. 或者三个双引号.
+
+
+    📌模块安装:📌
+    一般都用 pip 来安装各种模块.
+     pip install xxx 是在python2版本下面安装模块.
+    pip3 install xxx 是在python3版本下面安装模块.
+    记住,模块是不通用的. 
+    反正出现找不到模块这种错误你就重新安装就可以了.
+
+
+
+
+
+
+
+
+🎈Python 常见错误:🎈
+
+    ❌ shell 下方向键乱码
+        按方向键就出来 ^[[A^[[B^[[D^[[C 
+        这些其实是方向键盘的 acsll 码.
+        安装下 readline  就好了!!!!!!!
+        easy_install readline
+
+
+    ❌ 各种缩进错误
+        📌📌📌python 是根据缩进判断嵌套关系的!      📌📌📌
+        📌📌📌多用tab, 少空格!                      📌📌📌
+        📌📌📌不要打多余的空格, 哪怕是注释行的尾部  📌📌📌
+        📌📌📌pylint 最好的Python代码分析工具.
+              VScode装了python插件就自动开启
+
+    C0325: Unnecessary parens after u'print' keyword，
+        print("Hello") 出现的绿波浪线，其实print "hello"就足够了.
+
+    C0303: Trailing whitespace      行尾不能有空格!!!!   trail 尾巴.
+    C0304: Final newline missing，  最后一行下要留出一个空行。
+    E116:  unexpected indentation   不正常缩进!!
+
+
+
+
+
+
+
+🎈各种模块: 🎈
+
+📌urllib2 == urllib.request📌
+    这模块是下载网页的!!!
+    爬虫么肯定要先下载网页 再分析网页了. 
+    
+    import urllib2         是python2 的语法.
+    import urllib.request  是python3 的语法
+
+遇到报错:
+要么是你用python3 执行一个脚本. 这里脚本里面用了import urllib2 
+要么是你用python2 执行一个脚本. 这里脚本里面用了import urllib.request 
+这里只说了引入模块的区别. 具体的用法也是有区别的.
+
+
+
+
+📌Beautiful Soup📌
+    分析网页最流行的模块.提取网页中特定数据用的.
+
+    中文文档:
+    https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html
+    
+    安装这个模块后必须安装一个解析器. 一般用 lxml
+    pip3 install lxml
+
+
+📌 os 📌
+    系统路径相关,也是常用的.
+    查看当前运行脚本的路径.
+    新建/删除文件夹.
+    判断文件夹是否存在
+
+
+
+
+
